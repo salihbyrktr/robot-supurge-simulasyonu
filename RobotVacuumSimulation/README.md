@@ -8,7 +8,9 @@ A JavaFX-based desktop simulation of a robot vacuum cleaner that autonomously na
 
 | | |
 |---|---|
+| **University** | Erciyes University — Computer Engineering |
 | **Course** | BZ 214 Visual Programming |
+| **Instructor** | Ahmet Nusret Toprak |
 | **Group** | Group 4 |
 
 ## Group Members
@@ -53,28 +55,28 @@ mvn clean javafx:run
 ```
 src/main/java/com/example/robotvacuumsimulation/
 │
-├── Main.java                  # JavaFX Application entry point
-├── Launcher.java              # JavaFX module-compatible launcher
+├── Main.java                   # JavaFX Application entry point
+├── Launcher.java               # JavaFX module-compatible launcher
 │
-├── model/
-│   ├── Robot.java             # Robot state: position, battery, direction
-│   ├── Room.java              # 20x14 grid management
-│   ├── Cell.java              # Single grid cell: obstacle, dirt, charging station
-│   ├── DirtType.java          # DUST / LIQUID / STAIN enum with cleaning data
-│   ├── Direction.java         # NORTH / SOUTH / EAST / WEST enum
-│   ├── RoomType.java          # SALON / BEDROOM / OFFICE enum
-│   └── Pet.java               # Cat agent with autonomous movement
+│   ── Model ──
+├── Robot.java                  # Robot state: position, battery, direction
+├── Room.java                   # 20x14 grid management
+├── Cell.java                   # Single grid cell: obstacle, dirt, charging station
+├── DirtType.java               # DUST / LIQUID / STAIN enum with cleaning data
+├── Direction.java              # NORTH / SOUTH / EAST / WEST enum
+├── RoomType.java               # SALON / BEDROOM / OFFICE enum
+├── Pet.java                    # Cat agent with autonomous movement
 │
-├── view/
-│   ├── SimulationView.java    # Main canvas rendering + left/bottom UI panels
-│   └── RoomSelectionScreen.java # Opening room selection screen
+│   ── View ──
+├── SimulationView.java         # Main canvas rendering + left/bottom UI panels
+├── RoomSelectionScreen.java    # Opening room selection screen
 │
-├── controller/
-│   └── SimulationController.java # Game loop, BFS pathfinding, algorithms, state machine
+│   ── Controller ──
+├── SimulationController.java   # Game loop, BFS pathfinding, algorithms, state machine
 │
-└── util/
-    ├── RoomLoader.java        # Room layout and initial dirt loader
-    └── SoundManager.java      # Procedural sound synthesis (javax.sound)
+│   ── Utilities ──
+├── RoomLoader.java             # Room layout and initial dirt loader
+└── SoundManager.java           # Procedural sound synthesis (javax.sound)
 ```
 
 ---
@@ -129,6 +131,6 @@ src/main/java/com/example/robotvacuumsimulation/
 
 ## Acknowledgment
 
-This project was developed as part of the **BZ 214 Visual Programming** course.  
-Special thanks to the course instructor and contributors.  
-Special thanks to **Gökhan AZİZOĞLU**.
+This project was developed as a course project for **BZ 214 Visual Programming** at **Erciyes University**, Department of Computer Engineering, under the supervision of **Ahmet Nusret Toprak**.
+
+Special thanks to **Gökhan AZİZOĞLU** and to everyone who contributed to the project.
